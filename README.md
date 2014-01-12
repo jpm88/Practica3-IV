@@ -21,7 +21,7 @@ Para esta práctica vamos a utilizar dos máquinas virtuales distintas creadas c
 
 El objetivo de estas pruebas es encontrar el punto óptimo en el que la máquina virtual ni se resienta realizando una prueba y que a su vez tampoco la realice con holgura, necesitamos la potencia únicamente necesaria para la prueba que se va a realizar.
 
-La prueba se realizará con la aplicación web en PHP escogida para las dos anteriores prácticas, el Periódico Digital realizado en la asignatura Tecnologías Web, para ello usaremos el conocido Apache Benchmark, el cual hemos aprendido a usar en la asignatura de Ingeniería de Servidores, y haremos una prueba de unas 100 consultas con una concurrencia de 100 usuarios a la vez.
+La prueba se realizará con la aplicación web en PHP escogida para las dos anteriores prácticas, el Periódico Digital realizado en la asignatura Tecnologías Web, para ello usaremos el conocido Apache Benchmark, el cual hemos aprendido a usar en la asignatura de Ingeniería de Servidores, y haremos una prueba de unas 1000 consultas con una concurrencia de 100 usuarios a la vez.
 
 Recordar que para usar Apache Benchmark necesitamos tener instalado previamente apache2 y apache2-utils, si no, usar los siguientes comandos:
 
