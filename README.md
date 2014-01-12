@@ -94,7 +94,9 @@ En los gráficos las barras en naranja son las de las máquinas Ubuntu Server y 
 
 ####Conclusión
 
+Por los resultados entendemos que la máquina con Ubuntu Server instalada, sea cual sea su configuración, da mejores resultados que la máquina con CentOS instalada, el termino medio en cuanto a recursos y rendimiento, estaría en el primer caso, Ubuntu Server 12.04 con 512 de RAM y un núcleo de CPU, y el sexto caso, CentOS con 1024 de RAM y dos núcleos de CPU.
 
+Como lo que deseamos es que la máquina virtual no consuma demasiados recursos de la máquina host, entonces la opción óptima sería el caso 1 o el caso 2, puesto que no utiliza demasiados recursos y los resultados son muy aceptables, el caso 3 estaría funcionando con más holgura que los demás utilizando más recursos de la máquina host por lo que tampoco es una opción óptima.
 
 ### Repositorio
 
