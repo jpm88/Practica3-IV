@@ -35,7 +35,7 @@ http://localhost/periodicoII/
 
 Esta será la dirección que usaremos para el Apache Benchmark, si entramos en la dirección podemos visualizar el periódico:
 
-![p3a]()
+![p3a](https://raw2.github.com/jpm88/Practica3-IV/master/img/p3a.jpg)
 
 ####Máquinas virtuales a estudiar
 
@@ -102,17 +102,17 @@ Nos fijaremos para esta prueba en:
 
 ####Resultados de la prueba
 
+![p3b](https://raw2.github.com/jpm88/Practica3-IV/master/img/p3b.jpg)
+
 En los gráficos las barras en naranja son las de las máquinas Ubuntu Server y en azul las de las máquinas CentOS
 
-![p3b]()
+![p3c](https://raw2.github.com/jpm88/Practica3-IV/master/img/p3c.jpg)
 
-![p3c]()
+![p3d](https://raw2.github.com/jpm88/Practica3-IV/master/img/p3d.jpg)
 
-![p3d]()
+![p3e](https://raw2.github.com/jpm88/Practica3-IV/master/img/p3e.jpg)
 
-![p3e]()
-
-![p3f]()
+![p3f](https://raw2.github.com/jpm88/Practica3-IV/master/img/p3f.jpg)
 
 ### Repositorio
 
