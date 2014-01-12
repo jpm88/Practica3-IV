@@ -19,6 +19,8 @@ Se pueden usar tanto máquinas virtuales locales como máquinas en la nube como 
 
 Para esta práctica vamos a utilizar dos máquinas virtuales distintas creadas con VMWare, una con Ubuntu y otra con CentOS, y haremos varias pruebas sobre ellas cambiando configuraciones como la RAM asignada a cada máquina virtual o el número de núcleos de CPU que se usan.
 
+El objetivo de estas pruebas es encontrar el punto óptimo en el que la máquina virtual ni se resienta realizando una prueba y que a su vez tampoco la realice con holgura, necesitamos la potencia únicamente necesaria para la prueba que se va a realizar.
+
 La prueba se realizará con la aplicación web en PHP escogida para las dos anteriores prácticas, el Periódico Digital realizado en la asignatura Tecnologías Web, para ello usaremos el conocido Apache Benchmark, el cual hemos aprendido a usar en la asignatura de Ingeniería de Servidores, y haremos una prueba de unas 100 consultas con una concurrencia de 100 usuarios a la vez.
 
 Recordar que para usar Apache Benchmark necesitamos tener instalado previamente apache2 y apache2-utils, si no, usar los siguientes comandos:
@@ -42,25 +44,33 @@ Estas son las máquinas virtuales que vamos a usar en el estudio:
 - Primer caso:
 
 Ubuntu 13.10
+
 512MB RAM
+
 Un núcleo de CPU
 
 - Segundo caso:
 
 Ubuntu 13.10
+
 1024MB RAM
+
 Un núcleo de CPU
 
 - Tercer caso:
 
 Ubuntu 13.10
+
 1024MB RAM
+
 Dos núcleos de CPU
 
 - Cuarto caso:
 
 CentOS 6.4
+
 512MB RAM
+
 Un núcleo de CPU
 
 - Quinto caso:
@@ -72,16 +82,21 @@ Un núcleo de CPU
 - Sexto caso:
 
 CentOS 6.4
+
 1024MB RAM
+
 Dos núcleos de CPU
 
 ####Prueba
 
 Como se ha explicado antes, vamos a usar ab, Apache Benchmark, a la web mencionada en la introducción, con 1000 consultas con 100 usuarios a la vez mandando peticiones, introducimos el siguiente comando:
 
-ab -n1000 -c100 http://bahia.ugr.es/~x15472711/periodicoII/
+ab -n1000 -c100 http://localhost/periodicoII/
 
-Nos fijaremos para esta prueba en las Request per Second
+Nos fijaremos para esta prueba en las Request per Second, que son las peticiones realizadas por segundo, y las Time per request que es el tiempo medio  que el servidor ha necesitado para atender las peticiones concurrentes de los usuarios.
+
+####Resultados de la prueba
+
 
 
 ### Repositorio
