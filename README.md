@@ -27,9 +27,9 @@ sudo apt-get install apache2
 
 sudo apt-get install apache2-utils
 
-El periódico está alojado en un servidor facilitado por la universidad y la dirección es:
+El periódico lo copiaremos al directorio /var/www/ y para acceder a él pondremos en la barra de direcciones del navegador:
 
-http://bahia.ugr.es/~x15472711/periodicoII/
+http://localhost/periodicoII/
 
 Esta será la dirección que usaremos para el Apache Benchmark, si entramos en la dirección podemos visualizar el periódico:
 
@@ -59,32 +59,20 @@ Dos núcleos de CPU
 
 - Cuarto caso:
 
-Ubuntu 13.10
-2048MB RAM
-Dos núcleos de CPU
+CentOS 6.4
+512MB RAM
+Un núcleo de CPU
 
 - Quinto caso:
 
 CentOS 6.4
-512MB RAM
+1024MB RAM
 Un núcleo de CPU
 
 - Sexto caso:
 
 CentOS 6.4
 1024MB RAM
-Un núcleo de CPU
-
-- Séptimo caso:
-
-CentOS 6.4
-1024MB RAM
-Dos núcleos de CPU
-
-- Octavo caso:
-
-CentOS 6.4
-2048MB RAM
 Dos núcleos de CPU
 
 ####Prueba
