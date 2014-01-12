@@ -17,6 +17,83 @@ Se pueden usar tanto máquinas virtuales locales como máquinas en la nube como 
 
 ####Introducción
 
+Para esta práctica vamos a utilizar dos máquinas virtuales distintas creadas con VMWare, una con Ubuntu y otra con CentOS, y haremos varias pruebas sobre ellas cambiando configuraciones como la RAM asignada a cada máquina virtual o el número de núcleos de CPU que se usan.
+
+La prueba se realizará con la aplicación web en PHP escogida para las dos anteriores prácticas, el Periódico Digital realizado en la asignatura Tecnologías Web, para ello usaremos el conocido Apache Benchmark, el cual hemos aprendido a usar en la asignatura de Ingeniería de Servidores, y haremos una prueba de unas 100 consultas con una concurrencia de 100 usuarios a la vez.
+
+Recordar que para usar Apache Benchmark necesitamos tener instalado previamente apache2 y apache2-utils, si no, usar los siguientes comandos:
+
+sudo apt-get install apache2
+
+sudo apt-get install apache2-utils
+
+El periódico está alojado en un servidor facilitado por la universidad y la dirección es:
+
+http://bahia.ugr.es/~x15472711/periodicoII/
+
+Esta será la dirección que usaremos para el Apache Benchmark, si entramos en la dirección podemos visualizar el periódico:
+
+![p3a]()
+
+####Máquinas virtuales a estudiar
+
+Estas son las máquinas virtuales que vamos a usar en el estudio:
+
+- Primer caso:
+
+Ubuntu 13.10
+512MB RAM
+Un núcleo de CPU
+
+- Segundo caso:
+
+Ubuntu 13.10
+1024MB RAM
+Un núcleo de CPU
+
+- Tercer caso:
+
+Ubuntu 13.10
+1024MB RAM
+Dos núcleos de CPU
+
+- Cuarto caso:
+
+Ubuntu 13.10
+2048MB RAM
+Dos núcleos de CPU
+
+- Quinto caso:
+
+CentOS 6.4
+512MB RAM
+Un núcleo de CPU
+
+- Sexto caso:
+
+CentOS 6.4
+1024MB RAM
+Un núcleo de CPU
+
+- Séptimo caso:
+
+CentOS 6.4
+1024MB RAM
+Dos núcleos de CPU
+
+- Octavo caso:
+
+CentOS 6.4
+2048MB RAM
+Dos núcleos de CPU
+
+####Prueba
+
+Como se ha explicado antes, vamos a usar ab, Apache Benchmark, a la web mencionada en la introducción, con 1000 consultas con 100 usuarios a la vez mandando peticiones, introducimos el siguiente comando:
+
+ab -n1000 -c100 http://bahia.ugr.es/~x15472711/periodicoII/
+
+Nos fijaremos para esta prueba en las Request per Second
 
 
 ### Repositorio
