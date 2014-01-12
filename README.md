@@ -17,7 +17,7 @@ Se pueden usar tanto máquinas virtuales locales como máquinas en la nube como 
 
 ####Introducción
 
-Para esta práctica vamos a utilizar dos máquinas virtuales distintas creadas con VMWare, una con Ubuntu y otra con CentOS, y haremos varias pruebas sobre ellas cambiando configuraciones como la RAM asignada a cada máquina virtual o el número de núcleos de CPU que se usan.
+Para esta práctica vamos a utilizar dos máquinas virtuales distintas creadas con VMWare, una con Ubuntu Server y otra con CentOS, y haremos varias pruebas sobre ellas cambiando configuraciones como la RAM asignada a cada máquina virtual o el número de núcleos de CPU que se usan.
 
 El objetivo de estas pruebas es encontrar el punto óptimo en el que la máquina virtual ni se resienta realizando una prueba y que a su vez tampoco la realice con holgura, necesitamos la potencia únicamente necesaria para la prueba que se va a realizar.
 
@@ -43,7 +43,7 @@ Estas son las máquinas virtuales que vamos a usar en el estudio:
 
 - Primer caso:
 
-Ubuntu 13.10
+Ubuntu Server 12.04
 
 512MB RAM
 
@@ -51,7 +51,7 @@ Un núcleo de CPU
 
 - Segundo caso:
 
-Ubuntu 13.10
+Ubuntu Server 12.04
 
 1024MB RAM
 
@@ -59,7 +59,7 @@ Un núcleo de CPU
 
 - Tercer caso:
 
-Ubuntu 13.10
+Ubuntu Server 12.04
 
 1024MB RAM
 
@@ -93,11 +93,26 @@ Como se ha explicado antes, vamos a usar ab, Apache Benchmark, a la web menciona
 
 ab -n1000 -c100 http://localhost/periodicoII/
 
-Nos fijaremos para esta prueba en las Request per Second, que son las peticiones realizadas por segundo, y las Time per request que es el tiempo medio  que el servidor ha necesitado para atender las peticiones concurrentes de los usuarios.
+Nos fijaremos para esta prueba en:
+
+- Time taken for test, que es el tiempo que se ha tardado en realizar el test. (Menor es mejor)
+- Request per Second, que son las peticiones realizadas por segundo. (Mayor es mejor)
+- Time per request que es el tiempo medio que el servidor ha necesitado para atender las peticiones concurrentes de los usuarios. (Menor es mejor)
+- Transfer rate, que es la velocidad de transferencia. (Mayor es mejor)
 
 ####Resultados de la prueba
 
+En los gráficos las barras en naranja son las de las máquinas Ubuntu Server y en azul las de las máquinas CentOS
 
+![p3b]()
+
+![p3c]()
+
+![p3d]()
+
+![p3e]()
+
+![p3f]()
 
 ### Repositorio
 
