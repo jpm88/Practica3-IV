@@ -43,49 +43,27 @@ Estas son las máquinas virtuales que vamos a usar en el estudio:
 
 - Primer caso:
 
-Ubuntu Server 12.04
-
-512MB RAM
-
-Un núcleo de CPU
+Ubuntu Server 12.04, 512MB RAM, un núcleo de CPU
 
 - Segundo caso:
 
-Ubuntu Server 12.04
-
-1024MB RAM
-
-Un núcleo de CPU
+Ubuntu Server 12.04, 1024MB RAM, un núcleo de CPU
 
 - Tercer caso:
 
-Ubuntu Server 12.04
-
-1024MB RAM
-
-Dos núcleos de CPU
+Ubuntu Server 12.04, 1024MB RAM, dos núcleos de CPU
 
 - Cuarto caso:
 
-CentOS 6.4
-
-512MB RAM
-
-Un núcleo de CPU
+CentOS 6.4, 512MB RAM, un núcleo de CPU
 
 - Quinto caso:
 
-CentOS 6.4
-1024MB RAM
-Un núcleo de CPU
+CentOS 6.4, 1024MB RAM, un núcleo de CPU
 
 - Sexto caso:
 
-CentOS 6.4
-
-1024MB RAM
-
-Dos núcleos de CPU
+CentOS 6.4, 1024MB RAM, dos núcleos de CPU
 
 ####Prueba
 
@@ -113,6 +91,10 @@ En los gráficos las barras en naranja son las de las máquinas Ubuntu Server y 
 ![p3e](https://raw2.github.com/jpm88/Practica3-IV/master/img/p3e.jpg)
 
 ![p3f](https://raw2.github.com/jpm88/Practica3-IV/master/img/p3f.jpg)
+
+####Conclusión
+
+
 
 ### Repositorio
 
